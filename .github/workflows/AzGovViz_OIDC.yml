@@ -83,11 +83,11 @@ jobs:
           $largeFiles = $files.where({ $_.Length / 1MB -gt $gitHubFileSizeLimit })
           Write-Host "Found $($largeFiles.Count) files hitting the GitHub file size limit"
           foreach ($file in $largeFiles) {
-            if ( $($env:HandleGitHub100MBFileSizeLimit) == "true" -and $($env:EnableGitLFS) == "false" ) {
+            if ( $env:HandleGitHub100MBFileSizeLimit -and $env:EnableGitLFS ) {
               Write-Host "File '$($file.Name)' size $($file.Length / 1MB)MB exceeds the GitHub 100MB file size limit - removing file $($file.FullName)"
               Remove-Item -Path $file.FullName -Force
 
-            } elseif ( $($env:HandleGitHub100MBFileSizeLimit) == "true" -and $($env:EnableGitLFS) == "true" ) {
+            } elseif ( $env:HandleGitHub100MBFileSizeLimit -and $env:EnableGitLFS ) {
               Write-Host "Tracking file $($file.FullName) with git-lfs"
               git lfs track $file.FullName
 
