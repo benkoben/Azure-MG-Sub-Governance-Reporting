@@ -21,7 +21,7 @@ env:
   #If HandleGitHub100MBFileSizeLimit is true without EnableGitLFS any found files exceeding the 100MB size limit will be removed before they are commited to origin.
   #If HandleGitHub100MBFileSizeLimit is true and EnableGitLFSis true as well, then any found files exceeding the 100MB size limit are tracked with git-lfs and commited to origin.
   HandleGitHub100MBFileSizeLimit: false
-  EnableGitLFS: false
+  EnableGitLFS: true
 
 on:
   #schedule:
