@@ -21,7 +21,7 @@ env:
   #If HandleGitHub100MBFileSizeLimit is true without EnableGitLFS any found files exceeding the 100MB size limit will be removed before they are commited to origin.
   #If HandleGitHub100MBFileSizeLimit is true and EnableGitLFSis true as well, then any found files exceeding the 100MB size limit are tracked with git-lfs and commited to origin.
   HandleGitHub100MBFileSizeLimit: true
-  EnableGitLFS: true
+  EnableGitLFS: false
 
 on:
   #schedule:
@@ -91,8 +91,8 @@ jobs:
           }
           elseif ( ($env:HandleGitHub100MBFileSizeLimit -eq $True) -and ($env:EnableGitLFS -eq $True) ) {
               git lfs install
-              git lfs track *.json
-              git lfs track *.csv
+            git lfs track ./$($env:OutputPath)/*.csv
+            git lfs track ./$($env:OutputPath)/*.json
           }
           else {
               Write-Host 'No action will be taken.'
