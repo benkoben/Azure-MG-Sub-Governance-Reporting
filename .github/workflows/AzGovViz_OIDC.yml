@@ -70,7 +70,7 @@ jobs:
 
       - name: Run AzGovViz (fake)
         run: |
-          dd if=/dev/random of=./largefiles/$(uuidgen).csv bs=4k iflag=fullblock,count_bytes count=101M
+          dd if=/dev/random of=./wiki/$(uuidgen).csv bs=4k iflag=fullblock,count_bytes count=101M
 
       - name: Handle GH 100MB file size limit
         shell: pwsh
