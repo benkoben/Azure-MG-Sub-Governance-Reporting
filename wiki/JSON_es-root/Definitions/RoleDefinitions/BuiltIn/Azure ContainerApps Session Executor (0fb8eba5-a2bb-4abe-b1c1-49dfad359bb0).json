@@ -1,0 +1,29 @@
+{
+  "roleName": "Azure ContainerApps Session Executor",
+  "type": "BuiltInRole",
+  "description": "Create and execute sessions in a sessionPool",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.App/sessionPools/*/read",
+        "Microsoft.App/sessionPools/sessions/generatesessions/action"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.App/sessionPools/*/read",
+        "Microsoft.App/sessionPools/interpreters/execute/action",
+        "Microsoft.App/sessionPools/interpreters/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-04-08T15:07:44.8193956Z",
+  "updatedOn": "2024-05-21T15:16:29.6426867Z",
+  "createdBy": null,
+  "updatedBy": null
+}

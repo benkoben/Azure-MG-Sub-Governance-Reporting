@@ -1,0 +1,22 @@
+{
+  "roleName": "Compute Gallery Image Version Reader",
+  "type": "BuiltInRole",
+  "description": "This is the role for reading gallery image versions.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Compute/galleries/images/versions/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-08-12T16:09:21.7547431Z",
+  "updatedOn": "2024-08-12T16:09:21.7547431Z",
+  "createdBy": null,
+  "updatedBy": null
+}

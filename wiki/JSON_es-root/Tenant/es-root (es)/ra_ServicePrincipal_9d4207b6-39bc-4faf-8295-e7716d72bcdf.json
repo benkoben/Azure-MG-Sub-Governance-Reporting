@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/es-root/providers/microsoft.authorization/roleassignments/9d4207b6-39bc-4faf-8295-e7716d72bcdf",
+  "Scope": "/providers/Microsoft.Management/managementGroups/es-root",
+  "DisplayName": "umi-github-actions-2",
+  "SignInName": null,
+  "RoleDefinitionName": "Reader",
+  "RoleDefinitionId": "acdd72a7-3385-48ef-bd42-f606fba81ae7",
+  "ObjectId": "c34de424-d382-429c-9eed-c7b3fef22a12",
+  "ObjectType": "ServicePrincipal"
+}

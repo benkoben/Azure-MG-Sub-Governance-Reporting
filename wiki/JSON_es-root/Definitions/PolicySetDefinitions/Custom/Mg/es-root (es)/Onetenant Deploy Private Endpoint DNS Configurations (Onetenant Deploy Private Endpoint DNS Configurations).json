@@ -1,0 +1,428 @@
+{
+  "displayName": "Onetenant Deploy Private Endpoint DNS Configurations",
+  "policyType": "Custom",
+  "metadata": {
+    "category": "Custom",
+    "version": "2.0.0",
+    "createdBy": "dc956bb7-e4b1-4577-8c23-d21beae05321",
+    "createdOn": "2022-12-28T11:50:16.0798868Z",
+    "updatedBy": null,
+    "updatedOn": null
+  },
+  "policyDefinitions": [
+    {
+      "policyDefinitionReferenceId": "AutomationWebhook",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForAutomationWebhook",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.azure-automation.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "AutomationDSCAndHybridWorker",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForAutomationDSCAndHybridWorker",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.azure-automation.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "SqlServer",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForSqlServer",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.database.windows.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "SynapseSql",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForSynapseSql",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.sql.azuresynapse.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "SynapseSqlOnDemand",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForSynapseSqlOnDemand",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.sql.azuresynapse.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "SynapseDev",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForSynapseDev",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.dev.azuresynapse.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "SynapseStudio",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForSynapseStudio",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.azuresynapse.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "StorageBlob",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForStorageBlob",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.blob.core.windows.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "StorageBlobSecondary",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForStorageBlobSecondary",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.blob.core.windows.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "StorageTable",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForStorageTable",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.table.core.windows.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "StorageTableSecondary",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForStorageTableSecondary",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.table.core.windows.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "StorageQueue",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForStorageQueue",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.queue.core.windows.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "StorageQueueSecondary",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForStorageQueueSecondary",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.queue.core.windows.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "StorageFile",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForStorageFile",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.file.core.windows.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "StorageWeb",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForStorageWeb",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.web.core.windows.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "StorageWebSecondary",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForStorageWebSecondary",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.web.core.windows.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "DataLakeFileSystem",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForDataLakeFileSystem",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.dfs.core.windows.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "DataLakeFileSystemSecondary",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForDataLakeFileSystemSecondary",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.dfs.core.windows.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "CosmosSql",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForCosmosSql",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.documents.azure.com"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "CosmosMongoDB",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForCosmosMongoDB",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.mongo.cosmos.azure.com"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "CosmosCassandra",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForCosmosCassandra",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.cassandra.cosmos.azure.com"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "CosmosGremlin",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForCosmosGremlin",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.gremlin.cosmos.azure.com"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "CosmosTable",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForCosmosTable",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.table.cosmos.azure.com"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "PostgreSQL",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForPostgreSQL",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.postgres.database.azure.com"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "MySQL",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForMySQL",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.mysql.database.azure.com"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "MariaDB",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForMariaDB",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.mariadb.database.azure.com"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "KeyVault",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForKeyVault",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.vaultcore.azure.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "AzureSearch",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForAzureSearch",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.search.windows.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "ContainerRegistry",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForContainerRegistry",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.azurecr.io"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "AppConfiguration",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForAppConfiguration",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.azconfig.io"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "EventHubs",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForEventHubs",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.servicebus.windows.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "ServiceBus",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForServiceBus",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.servicebus.windows.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "Relay",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForRelay",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.servicebus.windows.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "EventGridTopic",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForEventGridTopic",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.eventgrid.azure.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "EventGridDomain",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForEventGridDomain",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.eventgrid.azure.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "WebApps",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForWebApps",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.azurewebsites.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "SignalR",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForSignalR",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.service.signalr.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "CognitiveServices",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForCognitiveServices",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.cognitiveservices.azure.com"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "AzureFileSync",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForAzureFileSync",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.afs.azure.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "DataFactory",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForDataFactory",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.datafactory.azure.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "CacheforRedis",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForCacheforRedis",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.redis.cache.windows.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "CacheforRedisEnterprise",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForCacheforRedisEnterprise",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.redisenterprise.cache.azure.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "PurviewAccount",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForPurviewAccount",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.purview.azure.com"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "PurviewPortal",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForPurviewPortal",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.purviewstudio.azure.com"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "DigitalTwins",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForDigitalTwins",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.digitaltwins.azure.net"
+        }
+      }
+    },
+    {
+      "policyDefinitionReferenceId": "HDInsights",
+      "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/es-root/providers/Microsoft.Authorization/policyDefinitions/DeployDNSForHDInsights",
+      "parameters": {
+        "privateDnsZoneId": {
+          "value": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/rg-platform3-dev-weu-001/providers/Microsoft.Network/privateDnsZones/onetenant.privatelink.azurehdinsight.net"
+        }
+      }
+    }
+  ]
+}

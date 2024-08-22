@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.authorization/roleassignments/5165cf4a-c0a5-4763-9a30-476381a3b80e",
+  "Scope": "/",
+  "DisplayName": "Ben Kooijman",
+  "SignInName": "ben_kooijman.se#EXT#@benkooijman.onmicrosoft.com",
+  "RoleDefinitionName": "User Access Administrator",
+  "RoleDefinitionId": "18d7d88d-d35e-4fb5-a5c3-7773c20a72d9",
+  "ObjectId": "5df7c533-ca40-429d-8f90-16357c4b564b",
+  "ObjectType": "User"
+}

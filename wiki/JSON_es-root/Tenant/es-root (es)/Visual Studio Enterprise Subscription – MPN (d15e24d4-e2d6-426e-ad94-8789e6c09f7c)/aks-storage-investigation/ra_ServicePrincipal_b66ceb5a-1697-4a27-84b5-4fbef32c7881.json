@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourcegroups/aks-storage-investigation/providers/microsoft.authorization/roleassignments/b66ceb5a-1697-4a27-84b5-4fbef32c7881",
+  "Scope": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/aks-storage-investigation",
+  "DisplayName": "bvault-storage-test-euw-01",
+  "SignInName": null,
+  "RoleDefinitionName": "Disk Snapshot Contributor",
+  "RoleDefinitionId": "7efff54f-a5b4-42b5-a1c5-5411624893ce",
+  "ObjectId": "6f13bd9e-2241-4962-8de7-de9ae5a0d163",
+  "ObjectType": "ServicePrincipal"
+}

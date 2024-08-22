@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/providers/microsoft.authorization/roleassignments/8a8caafb-a432-4079-8407-686d8cec47a7",
+  "Scope": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c",
+  "DisplayName": "umi-github-actions-2",
+  "SignInName": null,
+  "RoleDefinitionName": "Contributor",
+  "RoleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c",
+  "ObjectId": "c34de424-d382-429c-9eed-c7b3fef22a12",
+  "ObjectType": "ServicePrincipal"
+}

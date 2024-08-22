@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "Azure Stack HCI Device Management Role",
+    "type": "BuiltInRole",
+    "description": "Microsoft.AzureStackHCI Device Management Role",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.AzureStackHCI/Clusters/*",
+          "Microsoft.AzureStackHCI/EdgeDevices/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2023-10-11T15:23:32.489302Z",
+    "updatedOn": "2023-10-30T15:07:29.5841634Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/providers/Microsoft.Authorization/roleDefinitions/865ae368-6a45-4bd1-8fbf-0d5151f56fc1",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "865ae368-6a45-4bd1-8fbf-0d5151f56fc1"
+}

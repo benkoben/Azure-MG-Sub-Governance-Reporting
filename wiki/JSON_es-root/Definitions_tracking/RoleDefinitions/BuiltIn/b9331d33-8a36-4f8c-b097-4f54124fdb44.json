@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "roleName": "Managed Applications Reader",
+    "type": "BuiltInRole",
+    "description": "Lets you read resources in a managed app and request JIT access.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "*/read",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Solutions/jitRequests/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2018-09-06T00:33:58.3651522Z",
+    "updatedOn": "2021-11-11T20:13:38.7723523Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/providers/Microsoft.Authorization/roleDefinitions/b9331d33-8a36-4f8c-b097-4f54124fdb44",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "b9331d33-8a36-4f8c-b097-4f54124fdb44"
+}

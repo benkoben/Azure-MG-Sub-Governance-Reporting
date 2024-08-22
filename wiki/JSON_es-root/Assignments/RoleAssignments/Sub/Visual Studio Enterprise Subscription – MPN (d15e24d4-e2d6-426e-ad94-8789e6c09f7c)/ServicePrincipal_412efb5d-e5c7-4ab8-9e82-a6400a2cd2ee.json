@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/providers/microsoft.authorization/roleassignments/412efb5d-e5c7-4ab8-9e82-a6400a2cd2ee",
+  "Scope": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c",
+  "DisplayName": "techlunch-0929",
+  "SignInName": null,
+  "RoleDefinitionName": "Contributor",
+  "RoleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c",
+  "ObjectId": "6df2e2bd-8e9a-4098-aacb-def8bcf78ac0",
+  "ObjectType": "ServicePrincipal"
+}

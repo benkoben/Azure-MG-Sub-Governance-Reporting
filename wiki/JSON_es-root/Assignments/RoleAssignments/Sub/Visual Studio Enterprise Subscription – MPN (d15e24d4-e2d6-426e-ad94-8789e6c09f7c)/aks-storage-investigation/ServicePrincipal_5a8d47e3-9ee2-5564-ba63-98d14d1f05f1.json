@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourcegroups/aks-storage-investigation/providers/microsoft.authorization/roleassignments/5a8d47e3-9ee2-5564-ba63-98d14d1f05f1",
+  "Scope": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourcegroups/aks-storage-investigation",
+  "DisplayName": "bvault-storage-test-euw-01",
+  "SignInName": null,
+  "RoleDefinitionName": "Data Operator for Managed Disks",
+  "RoleDefinitionId": "959f8984-c045-4866-89c7-12bf9737be2e",
+  "ObjectId": "6f13bd9e-2241-4962-8de7-de9ae5a0d163",
+  "ObjectType": "ServicePrincipal"
+}

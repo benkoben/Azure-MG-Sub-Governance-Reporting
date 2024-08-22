@@ -1,0 +1,36 @@
+{
+  "roleName": "Azure Red Hat OpenShift Image Registry Operator Role",
+  "type": "BuiltInRole",
+  "description": "Enables permissions for the operator to manage a singleton instance of the OpenShift image registry. It manages all configuration of the registry, including creating storage.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Storage/storageAccounts/blobServices/read",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/read",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/write",
+        "Microsoft.Storage/storageAccounts/blobServices/generateUserDelegationKey/action",
+        "Microsoft.Storage/storageAccounts/read",
+        "Microsoft.Storage/storageAccounts/write",
+        "Microsoft.Storage/storageAccounts/delete",
+        "Microsoft.Storage/storageAccounts/listKeys/action",
+        "Microsoft.Resources/tags/write"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/delete",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/write",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/add/action",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/move/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-01-31T16:20:01.5089317Z",
+  "updatedOn": "2024-07-31T16:34:05.5934089Z",
+  "createdBy": null,
+  "updatedBy": null
+}

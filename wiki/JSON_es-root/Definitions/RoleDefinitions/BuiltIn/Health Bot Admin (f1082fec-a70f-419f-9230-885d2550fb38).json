@@ -1,0 +1,22 @@
+{
+  "roleName": "Health Bot Admin",
+  "type": "BuiltInRole",
+  "description": "Users with admin access can sign in, view and edit all of the bot resources, scenarios and configuration setting including the bot instance keys & secrets.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.HealthBot/healthBots/Admin/Action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-02-29T16:11:01.3963426Z",
+  "updatedOn": "2024-02-29T16:11:01.3963426Z",
+  "createdBy": null,
+  "updatedBy": null
+}

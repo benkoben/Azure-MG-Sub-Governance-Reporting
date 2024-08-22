@@ -1,0 +1,29 @@
+{
+  "roleName": "Azure Kubernetes Fleet Manager RBAC Cluster Admin",
+  "type": "BuiltInRole",
+  "description": "Grants read/write access to all Kubernetes resources in the fleet-managed hub cluster.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/operationresults/read",
+        "Microsoft.Resources/subscriptions/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.ContainerService/fleets/read",
+        "Microsoft.ContainerService/fleets/listCredentials/action"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.ContainerService/fleets/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-08-22T19:30:13.8996497Z",
+  "updatedOn": "2024-03-28T21:19:22.9674826Z",
+  "createdBy": null,
+  "updatedBy": null
+}

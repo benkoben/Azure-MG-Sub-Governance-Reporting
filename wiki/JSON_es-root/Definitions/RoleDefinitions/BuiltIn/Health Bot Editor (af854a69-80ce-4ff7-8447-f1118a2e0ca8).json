@@ -1,0 +1,22 @@
+{
+  "roleName": "Health Bot Editor",
+  "type": "BuiltInRole",
+  "description": "Users with editor access can sign in, view and edit all the bot resources, scenarios and configuration setting except for the bot instance keys & secrets and the end-user inputs (including Feedback, Unrecognized utterances and Conversation logs). A read-only access to the bot skills and channels.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.HealthBot/healthBots/Editor/Action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-02-29T16:10:59.0803245Z",
+  "updatedOn": "2024-02-29T16:10:59.0803245Z",
+  "createdBy": null,
+  "updatedBy": null
+}

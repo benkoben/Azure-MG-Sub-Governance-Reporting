@@ -1,0 +1,39 @@
+{
+  "properties": {
+    "roleName": "Oracle.Database Reader Built-in Role",
+    "type": "BuiltInRole",
+    "description": "Grants read access to all Oracle.Database resources",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Oracle.Database/Locations/*/read",
+          "Oracle.Database/Operations/read",
+          "Oracle.Database/oracleSubscriptions/*/read",
+          "Oracle.Database/cloudExadataInfrastructures/*/read",
+          "Oracle.Database/cloudVmClusters/*/read",
+          "Oracle.Database/cloudVmClusters/listPrivateIpAddresses/action",
+          "Oracle.Database/oracleSubscriptions/listCloudAccountDetails/action",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Resources/deployments/*/read",
+          "Microsoft.Network/virtualNetworks/subnets/read",
+          "Microsoft.Network/virtualNetworks/read",
+          "Microsoft.Network/locations/operations/read",
+          "Microsoft.Resources/deployments/*"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-03-26T15:15:05.077072Z",
+    "updatedOn": "2024-04-08T15:07:44.8263947Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/providers/Microsoft.Authorization/roleDefinitions/d623d097-b882-4e1e-a26f-ac60e31065a1",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "d623d097-b882-4e1e-a26f-ac60e31065a1"
+}

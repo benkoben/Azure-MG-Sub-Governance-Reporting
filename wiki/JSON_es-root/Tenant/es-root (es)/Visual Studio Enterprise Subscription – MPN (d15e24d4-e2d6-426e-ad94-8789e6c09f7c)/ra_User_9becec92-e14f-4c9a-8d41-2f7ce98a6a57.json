@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/providers/microsoft.authorization/roleassignments/9becec92-e14f-4c9a-8d41-2f7ce98a6a57",
+  "Scope": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c",
+  "DisplayName": "BenKooijmanRedeploy",
+  "SignInName": "ben.kooijman_redeploy.com#EXT#@benkooijman.onmicrosoft.com",
+  "RoleDefinitionName": "Owner",
+  "RoleDefinitionId": "8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+  "ObjectId": "dc956bb7-e4b1-4577-8c23-d21beae05321",
+  "ObjectType": "User"
+}

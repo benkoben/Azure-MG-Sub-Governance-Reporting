@@ -1,0 +1,30 @@
+{
+  "properties": {
+    "roleName": "Azure Spring Apps Spring Cloud Gateway Log Reader Role",
+    "type": "BuiltInRole",
+    "description": "Read real-time logs for Spring Cloud Gateway in Azure Spring Apps",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.AppPlatform/Spring/read",
+          "Microsoft.AppPlatform/Spring/gateways/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.AppPlatform/Spring/SpringCloudGateway/logstream/action"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-01-12T08:25:35.9674075Z",
+    "updatedOn": "2024-01-12T08:25:35.9674075Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/providers/Microsoft.Authorization/roleDefinitions/4301dc2a-25a9-44b0-ae63-3636cf7f2bd2",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "4301dc2a-25a9-44b0-ae63-3636cf7f2bd2"
+}

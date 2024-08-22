@@ -1,0 +1,46 @@
+{
+  "properties": {
+    "roleName": "Procurement Contributor",
+    "type": "BuiltInRole",
+    "description": "Lets you manage the procurement of products and services.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.SaaSHub/cloudservices/read",
+          "Microsoft.SaaSHub/cloudservices/write",
+          "Microsoft.SaaSHub/cloudservices/delete",
+          "Microsoft.SaaSHub/register/action",
+          "Microsoft.SaaS/resources/read",
+          "Microsoft.SaaS/resources/write",
+          "Microsoft.SaaS/resources/delete",
+          "Microsoft.SaaS/register/action",
+          "Microsoft.ProfessionalService/resources/read",
+          "Microsoft.ProfessionalService/resources/write",
+          "Microsoft.ProfessionalService/resources/delete",
+          "Microsoft.ProfessionalService/register/action",
+          "Microsoft.BillingBenefits/register/action",
+          "Microsoft.BillingBenefits/maccs/read",
+          "Microsoft.BillingBenefits/maccs/write",
+          "Microsoft.BillingBenefits/maccs/delete",
+          "Microsoft.BillingBenefits/maccs/cancel/action",
+          "Microsoft.BillingBenefits/maccs/chargeShortfall/action",
+          "Microsoft.BillingBenefits/maccs/contributors/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2023-05-10T15:28:24.1871677Z",
+    "updatedOn": "2023-11-10T23:07:06.4656917Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/providers/Microsoft.Authorization/roleDefinitions/be1a1ac2-09d3-4261-9e57-a73a6e227f53",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "be1a1ac2-09d3-4261-9e57-a73a6e227f53"
+}

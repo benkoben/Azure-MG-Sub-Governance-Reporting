@@ -1,0 +1,32 @@
+{
+  "roleName": "Chamber Admin",
+  "type": "BuiltInRole",
+  "description": "Lets you manage everything under your Modeling and Simulation Workbench chamber.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ModSimWorkbench/*/read",
+        "Microsoft.ModSimWorkbench/workbenches/chambers/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [
+        "Microsoft.ModSimWorkbench/workbenches/chambers/fileRequests/manage/action",
+        "Microsoft.ModSimWorkbench/workbenches/chambers/connector/setCopyPaste/action"
+      ],
+      "dataActions": [
+        "Microsoft.ModSimWorkbench/workbenches/chambers/upload/action",
+        "Microsoft.ModSimWorkbench/workbenches/chambers/files/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-12-15T20:53:14.4428297Z",
+  "updatedOn": "2024-03-29T22:26:19.3515764Z",
+  "createdBy": null,
+  "updatedBy": null
+}

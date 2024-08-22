@@ -1,0 +1,37 @@
+{
+  "properties": {
+    "roleName": "Azure Red Hat OpenShift Azure Files Storage Operator Role",
+    "type": "BuiltInRole",
+    "description": "Enables permissions to set OpenShift cluster-wide storage defaults. It ensures a default storageclass exists for clusters. It also installs Container Storage Interface (CSI) drivers which enable your cluster to use Azure Files.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Storage/storageAccounts/delete",
+          "Microsoft.Storage/storageAccounts/fileServices/read",
+          "Microsoft.Storage/storageAccounts/fileServices/shares/delete",
+          "Microsoft.Storage/storageAccounts/fileServices/shares/read",
+          "Microsoft.Storage/storageAccounts/fileServices/shares/write",
+          "Microsoft.Storage/storageAccounts/listKeys/action",
+          "Microsoft.Storage/storageAccounts/read",
+          "Microsoft.Storage/storageAccounts/write",
+          "Microsoft.Network/networkSecurityGroups/join/action",
+          "Microsoft.Network/virtualNetworks/subnets/read",
+          "Microsoft.Network/virtualNetworks/subnets/write"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-01-31T16:20:01.5229316Z",
+    "updatedOn": "2024-07-31T16:34:05.5934089Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/providers/Microsoft.Authorization/roleDefinitions/0d7aedc0-15fd-4a67-a412-efad370c947e",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "0d7aedc0-15fd-4a67-a412-efad370c947e"
+}

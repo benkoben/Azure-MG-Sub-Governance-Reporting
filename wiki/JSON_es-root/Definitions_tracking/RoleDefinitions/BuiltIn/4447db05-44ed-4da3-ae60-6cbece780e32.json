@@ -1,0 +1,35 @@
+{
+  "properties": {
+    "roleName": "Chamber User",
+    "type": "BuiltInRole",
+    "description": "Lets you view everything under your Modeling and Simulation Workbench chamber, but not make any changes.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ModSimWorkbench/workbenches/chambers/*/read",
+          "Microsoft.ModSimWorkbench/workbenches/chambers/workloads/*",
+          "Microsoft.ModSimWorkbench/workbenches/chambers/getUploadUri/action",
+          "Microsoft.ModSimWorkbench/workbenches/chambers/fileRequests/getDownloadUri/action",
+          "Microsoft.Authorization/*/read",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.ModSimWorkbench/workbenches/chambers/upload/action"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2021-12-15T20:51:06.2119764Z",
+    "updatedOn": "2023-02-13T16:14:49.7073547Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/providers/Microsoft.Authorization/roleDefinitions/4447db05-44ed-4da3-ae60-6cbece780e32",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "4447db05-44ed-4da3-ae60-6cbece780e32"
+}

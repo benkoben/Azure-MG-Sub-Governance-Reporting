@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourcegroups/aks-storage-investigation/providers/microsoft.authorization/roleassignments/03b12bb8-8844-5c8a-bdf3-4ce3dced6fed",
+  "Scope": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourcegroups/aks-storage-investigation",
+  "DisplayName": null,
+  "SignInName": null,
+  "RoleDefinitionName": "Contributor",
+  "RoleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c",
+  "ObjectId": "4dd1bb9b-2080-45a5-a89d-aed72eae3783",
+  "ObjectType": "Unknown"
+}

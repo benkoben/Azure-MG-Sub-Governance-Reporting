@@ -1,0 +1,34 @@
+{
+  "roleName": "Azure Red Hat OpenShift Cloud Controller Manager Role",
+  "type": "BuiltInRole",
+  "description": "Enables permissions for the operator to manage and update the cloud controller managers deployed on top of OpenShift.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Compute/virtualMachines/read",
+        "Microsoft.Network/loadBalancers/read",
+        "Microsoft.Network/loadBalancers/write",
+        "Microsoft.Network/networkInterfaces/read",
+        "Microsoft.Network/networkSecurityGroups/read",
+        "Microsoft.Network/networkSecurityGroups/write",
+        "Microsoft.Network/publicIPAddresses/join/action",
+        "Microsoft.Network/publicIPAddresses/read",
+        "Microsoft.Network/publicIPAddresses/write",
+        "Microsoft.Network/virtualNetworks/subnets/join/action",
+        "Microsoft.Network/virtualNetworks/subnets/read",
+        "Microsoft.Network/loadBalancers/backendAddressPools/join/action",
+        "Microsoft.Network/networkInterfaces/write"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-01-31T16:20:01.5239321Z",
+  "updatedOn": "2024-07-31T16:34:05.5944092Z",
+  "createdBy": null,
+  "updatedBy": null
+}

@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/es-root/providers/microsoft.authorization/roleassignments/e03241b5-bda8-48c2-aca1-8c6a7fc8690d",
+  "Scope": "/providers/Microsoft.Management/managementGroups/es-root",
+  "DisplayName": "postman-benkooijman",
+  "SignInName": null,
+  "RoleDefinitionName": "Contributor",
+  "RoleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c",
+  "ObjectId": "421cc84f-baf4-4339-bca7-cee590a372f2",
+  "ObjectType": "ServicePrincipal"
+}

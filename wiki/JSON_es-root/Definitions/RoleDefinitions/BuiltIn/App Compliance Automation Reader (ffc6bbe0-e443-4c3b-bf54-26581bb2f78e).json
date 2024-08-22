@@ -1,0 +1,22 @@
+{
+  "roleName": "App Compliance Automation Reader",
+  "type": "BuiltInRole",
+  "description": "Read, download the reports objects and related other resource objects.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "*/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-04-14T05:39:53.8670787Z",
+  "updatedOn": "2023-09-27T15:29:28.845747Z",
+  "createdBy": null,
+  "updatedBy": null
+}

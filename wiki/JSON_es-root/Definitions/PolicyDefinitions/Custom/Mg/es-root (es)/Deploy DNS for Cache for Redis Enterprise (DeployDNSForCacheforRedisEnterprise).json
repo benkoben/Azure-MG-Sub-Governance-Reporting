@@ -1,0 +1,105 @@
+{
+  "displayName": "Deploy DNS for Cache for Redis Enterprise",
+  "policyType": "Custom",
+  "mode": "All",
+  "metadata": {
+    "category": "Custom",
+    "source": "Bicep",
+    "version": "0.2.0",
+    "createdBy": "dc956bb7-e4b1-4577-8c23-d21beae05321",
+    "createdOn": "2022-12-28T11:49:15.7596624Z",
+    "updatedBy": "dc956bb7-e4b1-4577-8c23-d21beae05321",
+    "updatedOn": "2022-12-28T11:50:12.1413982Z"
+  },
+  "parameters": {
+    "privateDnsZoneId": {
+      "type": "String",
+      "metadata": {
+        "displayName": "privateDnsZoneId",
+        "strongType": "Microsoft.Network/privateDnsZones"
+      }
+    }
+  },
+  "policyRule": {
+    "if": {
+      "allOf": [
+        {
+          "field": "type",
+          "equals": "Microsoft.Network/privateEndpoints"
+        },
+        {
+          "field": "Microsoft.Network/privateEndpoints/privateLinkServiceConnections[*].privateLinkServiceId",
+          "contains": "Microsoft.Cache/redisEnterprise"
+        },
+        {
+          "count": {
+            "field": "Microsoft.Network/privateEndpoints/privateLinkServiceConnections[*].groupIds[*]",
+            "where": {
+              "field": "Microsoft.Network/privateEndpoints/privateLinkServiceConnections[*].groupIds[*]",
+              "equals": "redisCache"
+            }
+          },
+          "greaterOrEquals": 1
+        }
+      ]
+    },
+    "then": {
+      "effect": "deployIfNotExists",
+      "details": {
+        "roleDefinitionIds": [
+          "/providers/Microsoft.Authorization/roleDefinitions/4d97b98b-1d4f-4787-a291-c67834d212e7"
+        ],
+        "type": "Microsoft.Network/privateEndpoints/privateDnsZoneGroups",
+        "deployment": {
+          "properties": {
+            "mode": "Incremental",
+            "template": {
+              "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+              "contentVersion": "1.0.0.0",
+              "parameters": {
+                "privateDnsZoneId": {
+                  "type": "String"
+                },
+                "privateEndpointName": {
+                  "type": "String"
+                },
+                "location": {
+                  "type": "String"
+                }
+              },
+              "resources": [
+                {
+                  "name": "[concat(parameters('privateEndpointName'), '/deployedByPolicy')]",
+                  "type": "Microsoft.Network/privateEndpoints/privateDnsZoneGroups",
+                  "apiVersion": "2020-03-01",
+                  "location": "westeurope",
+                  "properties": {
+                    "privateDnsZoneConfigs": [
+                      {
+                        "name": "CacheforRedisEnterprise-privateDnsZone",
+                        "properties": {
+                          "privateDnsZoneId": "[parameters('privateDnsZoneId')]"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "parameters": {
+              "privateDnsZoneId": {
+                "value": "[parameters('privateDnsZoneId')]"
+              },
+              "privateEndpointName": {
+                "value": "[field('name')]"
+              },
+              "location": {
+                "value": "[field('location')]"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

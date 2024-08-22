@@ -1,0 +1,44 @@
+{
+  "roleName": "Enclave Reader Role",
+  "type": "BuiltInRole",
+  "description": "Enclave Reader Role to access the resources of Microsoft.Mission stored with RPSAAS.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Mission/Operations/read",
+        "Microsoft.Mission/catalogs/read",
+        "Microsoft.Mission/catalogs/write",
+        "Microsoft.Mission/catalogs/delete",
+        "Microsoft.Mission/communities/read",
+        "Microsoft.Mission/internalConnections/read",
+        "Microsoft.Mission/virtualEnclaves/read",
+        "Microsoft.Mission/virtualEnclaves/endpoints/read",
+        "Microsoft.Mission/virtualEnclaves/workloads/read",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/subscriptions/resourcegroups/deployments/read",
+        "Microsoft.Resources/subscriptions/operationresults/read",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Features/providers/features/read",
+        "Microsoft.Features/features/read",
+        "Microsoft.Mission/communities/communityEndpoints/read",
+        "Microsoft.Mission/communities/transitHubs/read",
+        "Microsoft.Mission/enclaveConnections/read",
+        "Microsoft.Mission/virtualEnclaves/enclaveEndpoints/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-11-29T16:10:05.7109858Z",
+  "updatedOn": "2024-03-26T15:15:05.1320725Z",
+  "createdBy": null,
+  "updatedBy": null
+}

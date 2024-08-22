@@ -1,0 +1,28 @@
+{
+  "roleName": "Load Test Owner",
+  "type": "BuiltInRole",
+  "description": "Execute all operations on load test resources and load tests",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.LoadTestService/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Insights/alertRules/*"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.LoadTestService/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-11-09T08:12:24.5500195Z",
+  "updatedOn": "2021-11-11T20:15:27.2897153Z",
+  "createdBy": null,
+  "updatedBy": null
+}

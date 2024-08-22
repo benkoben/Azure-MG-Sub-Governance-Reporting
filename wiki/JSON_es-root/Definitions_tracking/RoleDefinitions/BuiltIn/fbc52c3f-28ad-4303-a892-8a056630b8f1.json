@@ -1,0 +1,43 @@
+{
+  "properties": {
+    "roleName": "AppGw for Containers Configuration Manager",
+    "type": "BuiltInRole",
+    "description": "Allows access and configuration updates to Application Gateway for Containers resource.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ServiceNetworking/trafficControllers/read",
+          "Microsoft.ServiceNetworking/trafficControllers/write",
+          "Microsoft.ServiceNetworking/trafficControllers/delete",
+          "Microsoft.ServiceNetworking/trafficControllers/frontends/read",
+          "Microsoft.ServiceNetworking/trafficControllers/frontends/write",
+          "Microsoft.ServiceNetworking/trafficControllers/frontends/delete",
+          "Microsoft.ServiceNetworking/trafficControllers/associations/read",
+          "Microsoft.ServiceNetworking/trafficControllers/associations/write",
+          "Microsoft.ServiceNetworking/trafficControllers/associations/delete",
+          "Microsoft.Resources/subscriptions/resourcegroups/deployments/read",
+          "Microsoft.Resources/subscriptions/resourcegroups/deployments/write",
+          "Microsoft.Resources/subscriptions/resourcegroups/deployments/operations/read",
+          "Microsoft.Resources/subscriptions/resourcegroups/deployments/operationstatuses/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.ServiceNetworking/trafficControllers/serviceRoutingConfigurations/read",
+          "Microsoft.ServiceNetworking/trafficControllers/serviceRoutingConfigurations/write",
+          "Microsoft.ServiceNetworking/trafficControllers/serviceRoutingConfigurations/delete"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2022-10-06T05:17:45.6989401Z",
+    "updatedOn": "2023-06-29T21:36:31.5041313Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/providers/Microsoft.Authorization/roleDefinitions/fbc52c3f-28ad-4303-a892-8a056630b8f1",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "fbc52c3f-28ad-4303-a892-8a056630b8f1"
+}

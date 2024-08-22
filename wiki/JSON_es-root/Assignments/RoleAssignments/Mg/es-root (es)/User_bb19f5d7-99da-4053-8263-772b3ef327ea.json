@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/es-root/providers/microsoft.authorization/roleassignments/bb19f5d7-99da-4053-8263-772b3ef327ea",
+  "Scope": "/providers/Microsoft.Management/managementGroups/es-root",
+  "DisplayName": "BenKooijmanRedeploy",
+  "SignInName": "ben.kooijman_redeploy.com#EXT#@benkooijman.onmicrosoft.com",
+  "RoleDefinitionName": "Owner",
+  "RoleDefinitionId": "8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+  "ObjectId": "dc956bb7-e4b1-4577-8c23-d21beae05321",
+  "ObjectType": "User"
+}

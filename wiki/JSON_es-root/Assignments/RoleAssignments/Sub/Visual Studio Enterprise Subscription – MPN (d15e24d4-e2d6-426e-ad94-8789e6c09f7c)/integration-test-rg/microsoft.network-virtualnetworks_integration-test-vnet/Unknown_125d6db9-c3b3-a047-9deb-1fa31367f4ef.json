@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourcegroups/integration-test-rg/providers/microsoft.network/virtualnetworks/integration-test-vnet/subnets/aks-snet-blue/providers/microsoft.authorization/roleassignments/125d6db9-c3b3-a047-9deb-1fa31367f4ef",
+  "Scope": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/integration-test-rg/providers/Microsoft.Network/virtualNetworks/integration-test-vnet/subnets/aks-snet-blue",
+  "DisplayName": null,
+  "SignInName": null,
+  "RoleDefinitionName": "Network Contributor",
+  "RoleDefinitionId": "4d97b98b-1d4f-4787-a291-c67834d212e7",
+  "ObjectId": "2a00364c-703c-4ead-b15e-462daf532625",
+  "ObjectType": "Unknown"
+}

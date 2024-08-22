@@ -1,0 +1,34 @@
+{
+  "properties": {
+    "roleName": "Azure Kubernetes Service Contributor Role",
+    "type": "BuiltInRole",
+    "description": "Grants access to read and write Azure Kubernetes Service clusters",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Authorization/*/read",
+          "Microsoft.ContainerService/locations/*",
+          "Microsoft.ContainerService/managedClusters/*",
+          "Microsoft.ContainerService/managedclustersnapshots/*",
+          "Microsoft.ContainerService/snapshots/*",
+          "Microsoft.Insights/alertRules/*",
+          "Microsoft.Resources/deployments/*",
+          "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2020-02-27T19:27:15.073997Z",
+    "updatedOn": "2024-06-26T15:35:04.3821443Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/providers/Microsoft.Authorization/roleDefinitions/ed7f3fbd-7b88-4dd4-9017-9adb7ce333f8",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "ed7f3fbd-7b88-4dd4-9017-9adb7ce333f8"
+}

@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "roleName": "Azure Edge On-Site Deployment Engineer",
+    "type": "BuiltInRole",
+    "description": "Grants you access to take actions as an on-site person to assist in the provisioning of an edge device",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.EdgeOrder/bootstrapConfigurations/read",
+          "Microsoft.EdgeOrder/bootstrapConfigurations/uploadArtifacts/action"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-01-12T11:13:31.4650719Z",
+    "updatedOn": "2024-01-12T11:13:31.4650719Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/providers/Microsoft.Authorization/roleDefinitions/207bcc4b-86a6-4487-9141-d6c1f4c238aa",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "207bcc4b-86a6-4487-9141-d6c1f4c238aa"
+}

@@ -1,0 +1,25 @@
+{
+  "roleName": "Azure Red Hat OpenShift Cluster Ingress Operator Role",
+  "type": "BuiltInRole",
+  "description": "Enables permissions for the operator to configure and manage the OpenShift router.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Network/dnsZones/A/delete",
+        "Microsoft.Network/dnsZones/A/write",
+        "Microsoft.Network/privateDnsZones/A/delete",
+        "Microsoft.Network/privateDnsZones/A/write"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2024-01-31T16:20:02.1193285Z",
+  "updatedOn": "2024-07-31T16:34:05.5934089Z",
+  "createdBy": null,
+  "updatedBy": null
+}

@@ -1,0 +1,35 @@
+{
+  "properties": {
+    "roleName": "VM Scanner Operator",
+    "type": "BuiltInRole",
+    "description": "Role that provides access to disk snapshot for security analysis.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Compute/disks/read",
+          "Microsoft.Compute/disks/beginGetAccess/action",
+          "Microsoft.Compute/diskEncryptionSets/read",
+          "Microsoft.Compute/virtualMachines/instanceView/read",
+          "Microsoft.Compute/virtualMachines/read",
+          "Microsoft.Compute/virtualMachineScaleSets/instanceView/read",
+          "Microsoft.Compute/virtualMachineScaleSets/read",
+          "Microsoft.Compute/virtualMachineScaleSets/virtualMachines/read",
+          "Microsoft.Compute/virtualMachineScaleSets/virtualMachines/instanceView/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2022-05-15T22:07:11.4824101Z",
+    "updatedOn": "2024-03-05T16:16:43.6713888Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/providers/Microsoft.Authorization/roleDefinitions/d24ecba3-c1f4-40fa-a7bb-4588a071e8fd",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "d24ecba3-c1f4-40fa-a7bb-4588a071e8fd"
+}

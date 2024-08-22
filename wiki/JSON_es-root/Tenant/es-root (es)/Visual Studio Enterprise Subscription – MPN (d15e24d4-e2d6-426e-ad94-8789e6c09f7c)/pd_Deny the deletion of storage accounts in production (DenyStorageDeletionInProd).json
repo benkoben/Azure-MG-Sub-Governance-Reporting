@@ -1,0 +1,52 @@
+{
+  "displayName": "Deny the deletion of storage accounts in production",
+  "policyType": "Custom",
+  "mode": "Indexed",
+  "description": "",
+  "metadata": {
+    "category": "General",
+    "createdBy": "5df7c533-ca40-429d-8f90-16357c4b564b",
+    "createdOn": "2022-12-08T15:10:31.2523785Z",
+    "updatedBy": "dc956bb7-e4b1-4577-8c23-d21beae05321",
+    "updatedOn": "2022-12-08T15:51:11.3155701Z"
+  },
+  "parameters": {
+    "env": {
+      "type": "String",
+      "metadata": {
+        "description": "Value of the environment tag this policy should apply to.",
+        "displayName": "Environment",
+        "strongType": "environment"
+      }
+    }
+  },
+  "policyRule": {
+    "if": {
+      "allOf": [
+        {
+          "equals": "lock",
+          "field": "tags.lockstatus"
+        },
+        {
+          "equals": "Microsoft.Storage/storageAccounts",
+          "field": "type"
+        },
+        {
+          "equals": "[parameters('env')]",
+          "field": "tags.environment"
+        }
+      ]
+    },
+    "then": {
+      "details": {
+        "actionNames": [
+          "delete"
+        ],
+        "cascadeBehaviors": {
+          "resourceGroup": "deny"
+        }
+      },
+      "effect": "DenyAction"
+    }
+  }
+}

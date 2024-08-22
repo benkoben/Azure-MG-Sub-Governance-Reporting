@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourcegroups/aks-storage-investigation/providers/microsoft.authorization/roleassignments/fa161113-9841-41bd-a24f-c0a1cd4ae953",
+  "Scope": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/resourceGroups/aks-storage-investigation",
+  "DisplayName": "bvault-storage-test-euw-01",
+  "SignInName": null,
+  "RoleDefinitionName": "Disk Restore Operator",
+  "RoleDefinitionId": "b50d9833-a0cb-478e-945f-707fcc997c13",
+  "ObjectId": "6f13bd9e-2241-4962-8de7-de9ae5a0d163",
+  "ObjectType": "ServicePrincipal"
+}

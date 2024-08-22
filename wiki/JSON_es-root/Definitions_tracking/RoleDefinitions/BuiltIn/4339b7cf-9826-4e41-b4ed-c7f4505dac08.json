@@ -1,0 +1,30 @@
+{
+  "properties": {
+    "roleName": "Trusted Signing Identity Verifier",
+    "type": "BuiltInRole",
+    "description": "Manage identity or business verification requests. This role is in preview and subject to change.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.CodeSigning/*/read"
+        ],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.CodeSigning/IdentityVerification/Read",
+          "Microsoft.CodeSigning/IdentityVerification/Write"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2022-07-29T09:38:19.4833637Z",
+    "updatedOn": "2024-04-08T15:07:46.2519733Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/providers/Microsoft.Authorization/roleDefinitions/4339b7cf-9826-4e41-b4ed-c7f4505dac08",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "4339b7cf-9826-4e41-b4ed-c7f4505dac08"
+}

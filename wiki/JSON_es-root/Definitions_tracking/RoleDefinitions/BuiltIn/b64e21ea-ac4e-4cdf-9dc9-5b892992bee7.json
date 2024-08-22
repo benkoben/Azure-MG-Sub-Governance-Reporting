@@ -1,0 +1,30 @@
+{
+  "properties": {
+    "roleName": "Azure Connected Machine Onboarding",
+    "type": "BuiltInRole",
+    "description": "Can onboard Azure Connected Machines.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.HybridCompute/machines/read",
+          "Microsoft.HybridCompute/machines/write",
+          "Microsoft.HybridCompute/privateLinkScopes/read",
+          "Microsoft.GuestConfiguration/guestConfigurationAssignments/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2019-10-23T20:15:07.137287Z",
+    "updatedOn": "2021-11-11T20:14:10.8735219Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/providers/Microsoft.Authorization/roleDefinitions/b64e21ea-ac4e-4cdf-9dc9-5b892992bee7",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "b64e21ea-ac4e-4cdf-9dc9-5b892992bee7"
+}

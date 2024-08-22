@@ -1,0 +1,30 @@
+{
+  "properties": {
+    "roleName": "Container Registry Repository Writer",
+    "type": "BuiltInRole",
+    "description": "Allows for read and write access to Azure Container Registry repositories, but excluding catalog listing. This role is in preview and subject to change.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.ContainerRegistry/registries/repositories/metadata/read",
+          "Microsoft.ContainerRegistry/registries/repositories/content/read",
+          "Microsoft.ContainerRegistry/registries/repositories/metadata/write",
+          "Microsoft.ContainerRegistry/registries/repositories/content/write"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-06-06T15:47:34.3399996Z",
+    "updatedOn": "2024-08-20T15:22:02.2893272Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/providers/Microsoft.Authorization/roleDefinitions/2a1e307c-b015-4ebd-883e-5b7698a07328",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "2a1e307c-b015-4ebd-883e-5b7698a07328"
+}

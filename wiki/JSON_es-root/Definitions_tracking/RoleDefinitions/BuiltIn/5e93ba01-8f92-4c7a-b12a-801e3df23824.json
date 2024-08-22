@@ -1,0 +1,37 @@
+{
+  "properties": {
+    "roleName": "Kubernetes Agent Operator",
+    "type": "BuiltInRole",
+    "description": "Grants Microsoft Defender for Cloud access to Azure Kubernetes Services",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.ContainerService/managedClusters/read",
+          "Microsoft.ContainerService/managedClusters/trustedAccessRoleBindings/delete",
+          "Microsoft.ContainerService/managedClusters/trustedAccessRoleBindings/read",
+          "Microsoft.ContainerService/managedClusters/trustedAccessRoleBindings/write",
+          "Microsoft.ContainerService/managedClusters/write",
+          "Microsoft.Security/pricings/securityoperators/read",
+          "Microsoft.OperationalInsights/workspaces/write",
+          "Microsoft.OperationalInsights/workspaces/read",
+          "Microsoft.OperationalInsights/workspaces/listKeys/action",
+          "Microsoft.OperationalInsights/workspaces/sharedkeys/action",
+          "Microsoft.OperationalInsights/workspaces/sharedkeys/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-03-21T15:42:52.8028925Z",
+    "updatedOn": "2024-08-12T16:09:21.7547431Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/providers/Microsoft.Authorization/roleDefinitions/5e93ba01-8f92-4c7a-b12a-801e3df23824",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "5e93ba01-8f92-4c7a-b12a-801e3df23824"
+}

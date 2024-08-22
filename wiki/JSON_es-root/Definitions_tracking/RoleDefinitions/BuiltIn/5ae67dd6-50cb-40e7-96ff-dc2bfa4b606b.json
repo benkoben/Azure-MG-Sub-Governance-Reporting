@@ -1,0 +1,30 @@
+{
+  "properties": {
+    "roleName": "App Configuration Data Owner",
+    "type": "BuiltInRole",
+    "description": "Allows full access to App Configuration data.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.AppConfiguration/configurationStores/*/read",
+          "Microsoft.AppConfiguration/configurationStores/*/write",
+          "Microsoft.AppConfiguration/configurationStores/*/delete",
+          "Microsoft.AppConfiguration/configurationStores/*/action"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2019-10-25T18:41:40.1185063Z",
+    "updatedOn": "2023-02-06T16:01:22.3871138Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/providers/Microsoft.Authorization/roleDefinitions/5ae67dd6-50cb-40e7-96ff-dc2bfa4b606b",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "5ae67dd6-50cb-40e7-96ff-dc2bfa4b606b"
+}

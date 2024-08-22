@@ -1,0 +1,27 @@
+{
+  "properties": {
+    "roleName": "Container Registry Repository Catalog Lister",
+    "type": "BuiltInRole",
+    "description": "Allows for listing all repositories in an Azure Container Registry. This role is in preview and subject to change.",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.ContainerRegistry/registries/catalog/read"
+        ],
+        "notDataActions": []
+      }
+    ],
+    "createdOn": "2024-06-06T15:32:14.9109269Z",
+    "updatedOn": "2024-08-20T15:22:00.2589914Z",
+    "createdBy": null,
+    "updatedBy": null
+  },
+  "id": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/providers/Microsoft.Authorization/roleDefinitions/bfdb9389-c9a5-478a-bb2f-ba9ca092c3c7",
+  "type": "Microsoft.Authorization/roleDefinitions",
+  "name": "bfdb9389-c9a5-478a-bb2f-ba9ca092c3c7"
+}

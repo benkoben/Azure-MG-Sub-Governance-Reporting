@@ -1,0 +1,28 @@
+{
+  "roleName": "Azure Resource Notifications System Topics Subscriber",
+  "type": "BuiltInRole",
+  "description": "Lets you create system topics and event subscriptions on all system topics exposed currently and in the future by Azure Resource Notifications",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ResourceNotifications/systemTopics/subscribeToResources/action",
+        "Microsoft.ResourceNotifications/systemTopics/subscribeToHealthResources/action",
+        "Microsoft.ResourceNotifications/systemTopics/subscribeToMaintenanceResources/action",
+        "Microsoft.ResourceNotifications/systemTopics/subscribeToComputeResources/action",
+        "Microsoft.ResourceNotifications/systemTopics/subscribeToComputeScheduleResources/action",
+        "Microsoft.EventGrid/eventSubscriptions/write",
+        "Microsoft.EventGrid/systemTopics/eventSubscriptions/write"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-09-01T18:12:29.6066065Z",
+  "updatedOn": "2024-07-16T15:12:08.313718Z",
+  "createdBy": null,
+  "updatedBy": null
+}

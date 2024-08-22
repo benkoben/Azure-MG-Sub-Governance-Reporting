@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c/providers/microsoft.authorization/roleassignments/0013975b-9ef7-493f-8baf-8982e5c9a9da",
+  "Scope": "/subscriptions/d15e24d4-e2d6-426e-ad94-8789e6c09f7c",
+  "DisplayName": null,
+  "SignInName": null,
+  "RoleDefinitionName": "User Access Administrator",
+  "RoleDefinitionId": "18d7d88d-d35e-4fb5-a5c3-7773c20a72d9",
+  "ObjectId": "ebcdd815-53ea-441e-af4b-cba71d2dd097",
+  "ObjectType": "Unknown"
+}
