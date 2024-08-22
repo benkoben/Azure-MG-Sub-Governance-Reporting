@@ -65,7 +65,7 @@ jobs:
         uses: azure/powershell@v1
         with:
           inlineScript: |
-            . .\$($env:ScriptDir)\$($env:ScriptFile) -ManagementGroupId ${env:ManagementGroupId} -SubscriptionId4AzContext ${{secrets.SUBSCRIPTION_ID}} -ScriptPath ${env:ScriptDir} -OutputPath ${env:OutputPath} -GitHubActionsOIDC
+            . .\$($env:ScriptDir)\$($env:ScriptFile) -ManagementGroupId ${env:ManagementGroupId} -SubscriptionId4AzContext ${{secrets.SUBSCRIPTION_ID}} -ScriptPath ${env:ScriptDir} -OutputPath ${env:OutputPath} -GitHubActionsOIDC -NoPIMEligibility
           azPSVersion: "latest"
 
       - name: Track large files with Git LFS
