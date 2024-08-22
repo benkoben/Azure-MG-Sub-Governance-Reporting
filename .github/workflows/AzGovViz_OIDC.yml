@@ -61,12 +61,12 @@ jobs:
             . .\$($env:ScriptDir)\$($env:ScriptPrereqFile) -OutputPath ${env:OutputPath}
           azPSVersion: "latest"
 
-      - name: Run Azure Governance Visualizer
-        uses: azure/powershell@v1
-        with:
-          inlineScript: |
-            . .\$($env:ScriptDir)\$($env:ScriptFile) -ManagementGroupId ${env:ManagementGroupId} -SubscriptionId4AzContext ${{secrets.SUBSCRIPTION_ID}} -ScriptPath ${env:ScriptDir} -OutputPath ${env:OutputPath} -GitHubActionsOIDC
-          azPSVersion: "latest"
+      # - name: Run Azure Governance Visualizer
+      #   uses: azure/powershell@v1
+      #   with:
+      #     inlineScript: |
+      #       . .\$($env:ScriptDir)\$($env:ScriptFile) -ManagementGroupId ${env:ManagementGroupId} -SubscriptionId4AzContext ${{secrets.SUBSCRIPTION_ID}} -ScriptPath ${env:ScriptDir} -OutputPath ${env:OutputPath} -GitHubActionsOIDC
+      #     azPSVersion: "latest"
 
       - name: Track large files with Git LFS
         if: env.HandleGitHub100MBFileSizeLimit == 'true' && env.EnableGitLFS == 'true'
