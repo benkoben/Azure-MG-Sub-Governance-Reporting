@@ -75,6 +75,9 @@ jobs:
       - name: Handle GH 100MB file size limit
         shell: pwsh
         run: |
+          if ( ($env:HandleGitHub100MBFileSizeLimit -eq $True) -and ($env:EnableGitLFS  -eq $True) ) {
+            git lfs install
+          }
           Write-Host "Checking files in $($env:OutputPath) for GitHub 100MB file size limit"
           Write-Host "Ref: https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github#file-size-limits"
           $files = Get-ChildItem -Path $($env:OutputPath) -File -Recurse -ErrorAction Stop
